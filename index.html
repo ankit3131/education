@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+   <!-- Top Bar -->
+   <!-- Header Section -->
+   <section class="text-sm top_footer border-b border-gray-300">
+    <div class="max-w-7xl mx-auto flex justify-end items-center space-x-6 px-6">
+        <a href="#" class="flex items-center space-x-1 hover:text-blue-600  blue_text border-l border-gray-300 pl-3 py-2">
+            <span>🔒</span>
+            <span>Login</span>
+        </a>
+        <a href="#" class="flex items-center space-x-1 hover:text-blue-600  blue_text border-l border-gray-300 pl-3 py-2">
+            <span>🌍</span>
+            <span>Translate</span>
+        </a>
+        <a href="#" class="flex items-center space-x-1 hover:text-blue-600  blue_text border-l border-gray-300 pl-3 py-2">
+            <span>🔍</span>
+            <span>Search</span>
+        </a>
+        <a href="#" class="flex items-center space-x-1 hover:text-blue-600  blue_text border-l pr-3 border-r border-gray-300 pl-3 py-2">
+            <span>📘</span>
+            <span>Facebook</span>
+        </a>
+    </div>
+</section>
+
+<!-- Header -->
+<header class="relative bg-cover bg-center h-32 flex items-center justify-center" style="background-image: url('img/top_header.png');">
+    <div class="max-w-7xl mx-auto flex items-center space-x-4 px-6">
+        <img src="img/logo.png" alt="JCA Logo" class="h-16 object-contain">
+        <h1 class="text-3xl md:text-5xl lg:text-[64px] font-medium blue_text main_heading leading-tight">
+            JACKSONVILLE 
+            <span class="block text-yellow-500">CLASSICAL ACADEMY</span>
+        </h1>
+    </div>
+</header>
+<nav class="bg-[#0D3B53] py-3 px-5">
+    <div class="max-w-7xl mx-auto flex items-center w-full">
+
+        <!-- Navigation Links Centered & Spaced -->
+        <ul id="mobile-menu" class="hidden md:flex w-full justify-around items-center text-white text-lg font-medium">
+            <li><a href="#" class="hover:text-yellow-400 menu ">Home</a></li>
+            <li class="hidden md:block text-yellow-400">•</li>
+            <li><a href="#" class="hover:text-yellow-400 menu">About</a></li>
+            <li class="hidden md:block text-yellow-400">•</li>
+            <li><a href="#" class="hover:text-yellow-400 menu">Prospective Families</a></li>
+            <li class="hidden md:block text-yellow-400">•</li>
+            <li><a href="#" class="hover:text-yellow-400 menu">Current Families</a></li>
+            <li class="hidden md:block text-yellow-400">•</li>
+            <li><a href="#" class="hover:text-yellow-400 menu">Academics</a></li>
+            <li class="hidden md:block text-yellow-400">•</li>
+            <li><a href="#" class="hover:text-yellow-400 menu">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger Icon (Right Side) -->
+        
+    </div>
+    <button id="menu-btn" class="text-white text-2xl md:hidden focus:outline-none ml-auto">
+        ☰
+    </button>
+</nav>
+
+<section class="relative">
+    <img src="img/main_header.png" alt="Students" class="w-full h-[500px] md:h-[600px] object-cover">
+    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
+        <h2 class="text-white text-[48px] md:text-[64px] font-bold">Welcome to JCA</h2>
+    </div>
+</section>
+
+    <!-- ========== Top Section: 3 Images with Overlay & Content ========== -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl w-full px-4 -mt-12 mx-auto">
+        <!-- Image Box 1 -->
+        <div class="relative w-full h-40 flex">
+            <div class="w-1/2 h-full">
+                <img src="card1.png" alt="Team" class="w-full h-full object-cover">
+            </div>
+            <div class="w-1/2 h-full relative flex items-center justify-center text-white border-t-4 border-yellow-500">
+                <img src="img/card_bg.png" alt="Team" class="absolute inset-0 w-full h-full object-cover">
+                <h2 class="text-lg font-bold text-center relative z-10">Staff List</h2>
+            </div>
+        </div>
+    
+        <!-- Image Box 2 -->
+        <div class="relative w-full h-40 flex">
+            <div class="w-1/2 h-full">
+                <img src="card2.png" alt="Donate" class="w-full h-full object-cover">
+            </div>
+            <div class="w-1/2 h-full relative flex items-center justify-center text-white border-t-4 border-yellow-500">
+                <img src="img/card_bg.png" alt="Donate" class="absolute inset-0 w-full h-full object-cover">
+                <h2 class="text-lg font-bold text-center relative z-10">Donate</h2>
+            </div>
+        </div>
+    
+        <!-- Image Box 3 -->
+        <div class="relative w-full h-40 flex">
+            <div class="w-1/2 h-full">
+                <img src="card3.png" alt="Food" class="w-full h-full object-cover">
+            </div>
+            <div class="w-1/2 h-full relative flex items-center justify-center text-white border-t-4 border-yellow-500">
+                <img src="img/card_bg.png" alt="Food" class="absolute inset-0 w-full h-full object-cover">
+                <h2 class="text-lg font-bold text-center relative z-10">Food Menu</h2>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Bottom Section: 2-Column Layout -->
+    <section class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-blue-900 mb-4">Upcoming Events</h2>
+        
+            <div class="space-y-4">
+                <!-- Event 1 -->
+                <div class="flex items-center gap-4 p-4 rounded-lg">
+                    <div class="bg-yellow-500 text-white text-center p-3 w-16 h-16 rounded-full flex flex-col items-center justify-center">
+                        <span class="text-lg font-bold">25</span>
+                        <span class="text-sm">JAN</span>
+                    </div>
+                    <div>
+                        <h3 class="text-blue-900 font-semibold text-lg">No Uniform Day for classes that met their United Way goal</h3>
+                        <p class="text-gray-600 text-sm">6:30 PM - 8:30 PM</p>
+                    </div>
+                </div>
+        
+                <!-- Event 2 -->
+                <div class="flex items-center gap-4 p-4 rounded-lg">
+                    <div class="bg-yellow-500 text-white text-center p-3 w-16 h-16 rounded-full flex flex-col items-center justify-center">
+                        <span class="text-lg font-bold">27</span>
+                        <span class="text-sm">JAN</span>
+                    </div>
+                    <div>
+                        <h3 class="text-blue-900 font-semibold text-lg">Board of Directors Meeting</h3>
+                        <p class="text-gray-600 text-sm">6:30 PM - 8:30 PM</p>
+                        <p class="text-gray-500 text-xs">Room 104</p>
+                    </div>
+                </div>
+        
+                <!-- Event 3 -->
+                <div class="flex items-center gap-4 p-4 rounded-lg">
+                    <div class="bg-yellow-500 text-white text-center p-3 w-16 h-16 rounded-full flex flex-col items-center justify-center">
+                        <span class="text-lg font-bold">28</span>
+                        <span class="text-sm">JAN</span>
+                    </div>
+                    <div>
+                        <h3 class="text-blue-900 font-semibold text-lg">National Adult Baseball Association - Baseball Field</h3>
+                        <p class="text-gray-600 text-sm">6:30 PM - 8:30 PM</p>
+                        <p class="text-gray-500 text-xs">Baseball Field</p>
+                    </div>
+                </div>
+        
+                <!-- More events... -->
+            </div>
+        
+            <div class="flex gap-5 text-blue-600 font-semibold mt-4">
+                <a href="#" class="hover:underline">Show Calendar &gt;</a>
+                <a href="#" class="hover:underline">Show All &gt;</a>
+            </div>
+        </div>
+        
+    
+        <!-- News & Announcements -->
+        <div class="bg-white p-6">
+            <h2 class="text-2xl font-bold blue_text mb-4">News and Announcements</h2>
+            <div class="space-y-4">
+                <div class="flex space-x-4">
+                    <img src="img/blog1.png" class="w-100 rounded-lg object-cover">
+                    <div>
+                        <h3 class="font-bold">Order your Yearbooks!</h3>
+                        <p class="text-gray-600 text-sm">Don't forget, yearbooks are ready for purchase...</p>
+                    </div>
+                </div>
+                <div class="flex space-x-4">
+                    <img src="img/blog2.png" class="w-100 rounded-lg object-cover">
+                    <div>
+                        <h3 class="font-bold">Summer Reading Lists</h3>
+                        <p class="text-gray-600 text-sm">Did you know that children who read well...</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="text-blue-500 mt-4 inline-block hover:text-blue-700">Show All →</a>
+        </div>
+    </section>
+    <section class="relative w-full h-[400px] md:h-[600px]">
+        <img src="img/school_img.png" alt="Jacksonville Academy" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center0 text-center- pt-5">
+            <h3 class="text-yellow-400 text-sm md:text-lg tracking-widest">JACKSONVILLE CLASSICAL ACADEMY</h3>
+            <h1 class="text-white text-3xl md:text-6xl font-bold">VERITAS & PROBITAS</h1>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto text-left mt-5">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Featured Album</h2>
+        
+        <!-- Album Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg overflow-hidden">
+                <img src="img/album1.png" alt="Our School" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Our School</h3>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg overflow-hidden">
+                <img src="img/album2.png" alt="School Life" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">School Life</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="max-w-6xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-[35%_65%]">
+            <!-- Left Section (Text) - 35% width -->
+            <div class="bg_blue text-white p-8 flex flex-col justify-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Video Highlights</h2>
+                <p class="text-lg mb-6">Our School at a Glance</p>
+                <a href="#" class="text-yellow-400 font-semibold hover:underline">Video Gallery &rarr;</a>
+            </div>
+    
+            <!-- Right Section (Video) - 65% width -->
+            <div class="relative">
+                <img src="img/youtube.png" alt="" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="bg_blue text-white py-4 mt-5">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+            
+            <!-- Left Side: Logo & School Name -->
+            <div class="flex items-center space-x-4">
+                <img src="img/logo.png" alt="JCA Logo" class="w-16 h-16">
+                <div>
+                    <h1 class="text-xl font-bold">JACKSONVILLE</h1>
+                    <p class="text-sm">CLASSICAL ACADEMY</p>
+                </div>
+            </div>
+
+            <!-- Middle: Address & Phone -->
+            <div class="text-center md:text-left mt-4 md:mt-0">
+                <p class="text-sm font-semibold">2043 Forest St.<br>Jacksonville, FL 32204</p>
+            </div>
+
+            <!-- Right Side: Phone & FortifyFL -->
+            <div class="flex flex-col md:flex-row items-center space-x-4 mt-4 md:mt-0">
+                <p class="text-sm font-semibold">Phone:<br>(904) 288-7732</p>
+                <img src="img/phone_cat.png" alt="FortifyFL" class="w-20">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-gray-200- text-center text-gray-700 text-sm">
+        <p class="max-w-4xl mx-auto">
+            © Copyright 2019 Jacksonville Classical Academy admits students of any race, color, national and ethnic origin to all the rights, privileges, programs, and activities generally accorded or made available to students at the School. It does not discriminate on the basis of race, color, national and ethnic origin in administration of its educational policies, admissions policies, athletics, and other school-administered programs.
+        </p>
+        <div class="mt-4 border-t border-gray-300 pt-2 bg-gray-200-">
+            <p class="text-xs">Powered by</p>
+            <p class="text-sm font-bold">EDUCATIONAL NETWORKS</p>
+        </div>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>

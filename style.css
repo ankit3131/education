@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #093e52;
+    --secondary-color: #daa900;
+    --font-primary: "Minion Pro", serif;
+    --font-secondary: "Montserrat Alternates", sans-serif;
+}
+
+*/
+body {
+    color: var(--primary-color);
+    font-family: var(--font-primary);
+}
+.top_footer{
+font-size: 100px;
+text-transform: uppercase;
+color: #093e52;
+color: #daa900;
+font-family: "Minion Pro";
+font-family: "Montserrat Alternates";
+text-align: center;
+}
+.main_heaing{
+line-height: 0.8;
+}
+
+.blue_text{
+    color: var(--primary-color);
+}
+.bg_blue{
+    background-color: var(--primary-color);
+}
+.menu:hover{
+    border-bottom: solid var(--secondary-color) !important;
+/* color: var(--secondary-color) !important; */
+}
+.menu{
+    color: #fff;
+}
